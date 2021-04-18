@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.sanghyeklotto.flutter_lotto_app",
+  "applicationId": "com.sanghyeklotto.flutter_lotto",
   "variantName": "processDebugResources",
   "elements": [
     {

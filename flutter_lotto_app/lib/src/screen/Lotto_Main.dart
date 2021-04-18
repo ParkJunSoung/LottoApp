@@ -3,10 +3,10 @@ import 'dart:io';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lotto_app/src/utils/env.dart';
-import 'package:flutter_lotto_app/src/widget/Loading.dart';
-import 'package:flutter_lotto_app/src/widget/MainButton.dart';
-import 'package:flutter_lotto_app/src/widget/WeekWinNum.dart';
+import 'package:flutter_lotto/src/utils/env.dart';
+import 'package:flutter_lotto/src/widget/Loading.dart';
+import 'package:flutter_lotto/src/widget/MainButton.dart';
+import 'package:flutter_lotto/src/widget/WeekWinNum.dart';
 
 import 'package:http/http.dart' as http;
 

@@ -4,12 +4,12 @@ import 'dart:math';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lotto_app/src/screen/Lotto_WinInfo.dart';
-import 'package:flutter_lotto_app/src/screen/MyLottoNumData.dart';
-import 'package:flutter_lotto_app/src/screen/QR_result.dart';
-import 'package:flutter_lotto_app/src/utils/env.dart';
-import 'package:flutter_lotto_app/src/widget/Coin_widget.dart';
-import 'package:flutter_lotto_app/src/widget/LottoBallWidget.dart';
+import 'package:flutter_lotto/src/screen/Lotto_WinInfo.dart';
+import 'package:flutter_lotto/src/screen/MyLottoNumData.dart';
+import 'package:flutter_lotto/src/screen/QR_result.dart';
+import 'package:flutter_lotto/src/utils/env.dart';
+import 'package:flutter_lotto/src/widget/Coin_widget.dart';
+import 'package:flutter_lotto/src/widget/LottoBallWidget.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 

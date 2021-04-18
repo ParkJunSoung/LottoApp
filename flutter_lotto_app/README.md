@@ -1,4 +1,4 @@
-# flutter_lotto_app
+# flutter_lotto
 
 A new Flutter application.
 

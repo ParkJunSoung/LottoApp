@@ -1,6 +1,6 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-final app_API = '{server url}';
+final app_API = '{Server Url}';
 
 final storage = new FlutterSecureStorage();
 

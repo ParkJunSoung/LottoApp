@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_lotto_app/src/utils/env.dart';
-import 'package:flutter_lotto_app/src/widget/Loading.dart';
-import 'package:flutter_lotto_app/src/widget/LottoBallWidget.dart';
+import 'package:flutter_lotto/src/utils/env.dart';
+import 'package:flutter_lotto/src/widget/Loading.dart';
+import 'package:flutter_lotto/src/widget/LottoBallWidget.dart';
 
 class MyLottoNumberScreen extends StatefulWidget {
   @override

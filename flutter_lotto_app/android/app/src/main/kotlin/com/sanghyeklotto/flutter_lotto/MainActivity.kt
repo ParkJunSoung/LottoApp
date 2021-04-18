@@ -1,4 +1,4 @@
-package com.sanghyeklotto.flutter_lotto_app
+package com.sanghyeklotto.flutter_lotto
 
 import io.flutter.embedding.android.FlutterActivity
 

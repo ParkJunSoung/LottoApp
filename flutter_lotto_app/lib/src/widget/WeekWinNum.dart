@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lotto_app/src/utils/price_utils.dart';
-import 'package:flutter_lotto_app/src/widget/LottoBallWidget.dart';
+import 'package:flutter_lotto/src/utils/price_utils.dart';
+import 'package:flutter_lotto/src/widget/LottoBallWidget.dart';
 
 class WeekWinNumWidget extends StatelessWidget {
   final data;

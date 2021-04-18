@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lotto_app/src/widget/WeekWinNum.dart';
+import 'package:flutter_lotto/src/widget/WeekWinNum.dart';
 
 class LottoWinInfoScreen extends StatelessWidget {
   final data;
