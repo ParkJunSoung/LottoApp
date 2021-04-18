@@ -54,6 +54,7 @@ class _MyLottoNumberScreenState extends State<MyLottoNumberScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         centerTitle: true,
         title: Text('내가 저장한 번호'),
       ),
@@ -72,6 +73,11 @@ class _MyLottoNumberScreenState extends State<MyLottoNumberScreen> {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Card(
+                        color: Colors.blueGrey[100],
+                        elevation: 2,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                         clipBehavior: Clip.antiAlias,
                         child: Row(
                           children: [

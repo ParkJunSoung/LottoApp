@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
@@ -15,11 +16,14 @@ class LottoMainScreen extends StatefulWidget {
 }
 
 class _LottoMainScreenState extends State<LottoMainScreen> {
+  AdmobBannerSize bannerSize;
   var data;
 
   @override
   void initState() {
     // TODO: implement initState
+    bannerSize = AdmobBannerSize.BANNER;
+
     lottoTotalResult();
     super.initState();
   }
@@ -43,6 +47,7 @@ class _LottoMainScreenState extends State<LottoMainScreen> {
         ? LoadingScreen()
         : Scaffold(
             appBar: AppBar(
+              backgroundColor: Colors.blueGrey,
               centerTitle: true,
               title: Text(
                 '${data['drwNoDate']} / ${data['drwNo']} 회차',
@@ -69,8 +74,8 @@ class _LottoMainScreenState extends State<LottoMainScreen> {
                 Container(
                   height: 60,
                   child: AdmobBanner(
-                    adUnitId: adBannerUnitId,
-                    adSize: AdmobBannerSize.BANNER,
+                    adUnitId: Platform.isIOS ? '' : adBannerUnitId,
+                    adSize: bannerSize,
                   ),
                 ),
               ],

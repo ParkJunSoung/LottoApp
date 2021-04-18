@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
-        android:label="flutter_lotto_app"
+        android:label="로또플러스"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">
 

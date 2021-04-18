@@ -9,6 +9,7 @@ class LottoWinInfoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         centerTitle: true,
         title: Text(
           '${data['drwNoDate']} / ${data['drwNo']} 회차',

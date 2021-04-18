@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:admob_flutter/admob_flutter.dart';
@@ -31,7 +32,7 @@ class _MainButtonWidgetState extends State<MainButtonWidget> {
     // TODO: implement initState
 
     rewardAd = AdmobReward(
-      adUnitId: adRewardUnitId,
+      adUnitId: Platform.isIOS ? '' : adRewardUnitId,
       listener: (AdmobAdEvent event, Map<String, dynamic> args) {
         if (event == AdmobAdEvent.closed) rewardAd.load();
         handleEvent(event, args, 'Reward');
@@ -258,13 +259,23 @@ class _MainButtonWidgetState extends State<MainButtonWidget> {
                             content: LottoBallWidget(data: jsonDecode(json)),
                             actions: [
                               FlatButton(
-                                child: new Text("닫기"),
+                                child: new Text(
+                                  "닫기",
+                                  style: TextStyle(
+                                      color: Colors.blueGrey,
+                                      fontWeight: FontWeight.bold),
+                                ),
                                 onPressed: () {
                                   Navigator.pop(context);
                                 },
                               ),
                               FlatButton(
-                                child: new Text("번호 저장"),
+                                child: new Text(
+                                  "번호 저장",
+                                  style: TextStyle(
+                                      color: Colors.blueGrey,
+                                      fontWeight: FontWeight.bold),
+                                ),
                                 onPressed: () async {
                                   var array = [];
                                   var readRes =
@@ -304,13 +315,23 @@ class _MainButtonWidgetState extends State<MainButtonWidget> {
                             ),
                             actions: [
                               FlatButton(
-                                child: new Text("닫기"),
+                                child: new Text(
+                                  "닫기",
+                                  style: TextStyle(
+                                      color: Colors.blueGrey,
+                                      fontWeight: FontWeight.bold),
+                                ),
                                 onPressed: () {
                                   Navigator.pop(context);
                                 },
                               ),
                               FlatButton(
-                                child: new Text("시청하기"),
+                                child: new Text(
+                                  "시청하기",
+                                  style: TextStyle(
+                                      color: Colors.blueGrey,
+                                      fontWeight: FontWeight.bold),
+                                ),
                                 onPressed: () {
                                   rewardAd.show();
                                 },
@@ -321,7 +342,7 @@ class _MainButtonWidgetState extends State<MainButtonWidget> {
                       );
                     }
                   },
-                  child: Text('랜덤 추천번호 받기'),
+                  child: Text('추천번호 받기'),
                 ),
                 FlatButton(
                   height: 45,
