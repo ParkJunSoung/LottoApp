@@ -108,8 +108,8 @@ class _MainButtonWidgetState extends State<MainButtonWidget> {
         Logger().d('admob FailedToLOad');
         break;
       case AdmobAdEvent.rewarded:
-        chargeCoinCount();
         showSnackBar('하트가 충전되었습니다.');
+        chargeCoinCount();
 
         Get.back();
 
@@ -351,7 +351,8 @@ class _MainButtonWidgetState extends State<MainButtonWidget> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
-                  onPressed: () => Get.to(MyLottoNumberScreen()),
+                  onPressed: () =>
+                      Get.to(MyLottoNumberScreen(), arguments: lottoData.first),
                   child: Text('내가 저장한 추천번호'),
                 ),
                 CoinIconWidget(
