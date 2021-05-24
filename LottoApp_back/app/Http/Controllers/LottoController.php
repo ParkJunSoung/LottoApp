@@ -10,7 +10,7 @@ use function GuzzleHttp\json_decode;
 
 class LottoController extends Controller
 {
-    public function lottoAllListStore()
+    public function lottoAllListStore() //전체 당체 당첨정보 가져와 DB에 저장
     {
 
         $i = 1;
@@ -57,7 +57,7 @@ class LottoController extends Controller
         return 'finish';
     }
 
-    public function lottoNewListStore()
+    public function lottoNewListStore() // 최신당첨정보
     {
         $drwNo = null;
 
@@ -101,21 +101,21 @@ class LottoController extends Controller
 
         curl_close($ch);
 
-        $logPath = "log/newlotto.txt";  //로그위치 지정
+        $logPath = "/log/newlotto.txt";  //로그위치 지정
 
         $log_file = fopen($logPath, "a");
         fwrite($log_file, date("Y-m-d", time()) . ' / ' . $drwNo . '회차');
         fclose($log_file);
     }
 
-    public function recentlyData()
+    public function recentlyData() //최신 당첨정보
     {
         $res = DB::select('select * from lottos order by drwNo desc limit 1');
 
         return $res;
     }
 
-    public function lottoAllList()
+    public function lottoAllList() // DB 저장된 전체 당첨정보
     {
         $res = DB::select('select * from lottos order by drwNo desc');
 

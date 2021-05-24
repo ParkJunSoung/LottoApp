@@ -200,9 +200,9 @@ MERGED from [com.google.android.gms:play-services-ads-base:19.1.0] C:\Users\Hsh\
 	android:usesCleartextTraffic
 		ADDED from D:\git\LottoApp\flutter_lotto_app\android\app\src\main\AndroidManifest.xml:16:9-44
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from D:\git\LottoApp\flutter_lotto_app\android\app\src\main\AndroidManifest.xml:18:9-20:69
+ADDED from D:\git\LottoApp\flutter_lotto_app\android\app\src\main\AndroidManifest.xml:18:9-20:41
 	android:value
-		ADDED from D:\git\LottoApp\flutter_lotto_app\android\app\src\main\AndroidManifest.xml:20:13-67
+		ADDED from D:\git\LottoApp\flutter_lotto_app\android\app\src\main\AndroidManifest.xml:20:13-39
 	android:name
 		ADDED from D:\git\LottoApp\flutter_lotto_app\android\app\src\main\AndroidManifest.xml:19:13-69
 activity#com.sanghyeklotto.flutter_lotto.MainActivity
